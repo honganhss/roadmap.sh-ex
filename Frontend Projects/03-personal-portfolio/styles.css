@@ -1,0 +1,38 @@
+@media (max-width: 750px) {
+  tr {
+    display: flex; /* Chuyển hàng thành flex container */
+    flex-direction: column; /* Sắp xếp các phần tử theo cột */
+    align-items: flex-start; /* Căn nội dung sang trái */
+  }
+
+  td {
+    width: 100%; /* Mỗi ô chiếm toàn bộ chiều rộng */
+    display: block; /* Chuyển mỗi ô thành block */
+    padding: 0.5rem 0; /* Thêm khoảng cách giữa các ô */
+  }
+  .logo {
+    justify-content: center !important; /* Căn giữa theo chiều dọc */
+    align-items: center !important; /* Căn giữa theo chiều ngang */
+    text-align: center !important; /* Căn giữa nội dung chữ */
+  }
+  nav {
+    display: flex;
+    justify-content: center; /* Căn giữa các phần tử trong nav */
+    text-align: center; /* Căn giữa chữ trong các liên kết */
+  }
+  nav tr {
+    flex-direction: unset;
+  }
+  nav td {
+    margin-right: 10px;
+  }
+  .projects {
+    justify-content: center !important; /* Căn giữa theo chiều dọc */
+    align-items: center !important; /* Căn giữa theo chiều ngang */
+    text-align: center !important; /* Căn giữa nội dung chữ */
+  }
+}
+.projects ul {
+  list-style-type: none;
+  padding: 0;
+}
